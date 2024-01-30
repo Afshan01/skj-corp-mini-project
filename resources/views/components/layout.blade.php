@@ -8,7 +8,7 @@
         @vite('resources/css/app.css')
     </head>
     <body class="mx-auto mt-10 max-w-2xl bg-slate-200 text-slate-700">
-        <div class="text-2xl">SKJ Corp Blogs</div>
+        <div class="text-2xl mb-2">SKJ Corp Blogs</div>
         {{ $slot }}
     </body>
 </html>
