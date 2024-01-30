@@ -19,5 +19,4 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('', fn() => to_route('blogposts.index'));
 
-Route::resource('blogposts', BlogPostController::class)
-    ->only(['index']);
+Route::resource('blogposts', BlogPostController::class)->only(['index','show']);
