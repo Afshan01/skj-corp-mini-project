@@ -1,16 +1,4 @@
 <x-layout>
-    <nav class="mb-4 ml-4 mr-4">
-        <ul class="flex space-x-4 text-slate-500">
-           <li>
-              <a href="/">Home</a>
-           </li>
-           <li>-></li>
-           <li>
-              <a href="{{ route('blogposts.index') }}">
-                 All BlogPosts
-              </a>
-           </li>
-        </ul>
-     </nav>
+    <x-navigation class="mb-4 ml-4 mr-4" :links="['All BlogPosts' => route('blogposts.index'), ('Post No: ').$blogpost->id => '#']" />
     <x-blogpost-card :$blogpost/> 
 </x-layout>

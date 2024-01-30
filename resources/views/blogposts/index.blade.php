@@ -1,4 +1,5 @@
 <x-layout>
+    <x-navigation class="mb-4 ml-4 mr-4" :links="['All BlogPosts' => route('blogposts.index')]" />
     @foreach ($blogposts as $blogpost)
         <x-blogpost-card class="mb-4" :$blogpost>
             <div class="mt-4">
