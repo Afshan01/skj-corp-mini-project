@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BlogPost;
 use Illuminate\Http\Request;
 
-class BlogPost extends Controller
+class BlogPostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,6 +13,7 @@ class BlogPost extends Controller
     public function index()
     {
         //
+        return view('blogposts.index', ['blogposts' =>  BlogPost::all()]);
     }
 
     /**

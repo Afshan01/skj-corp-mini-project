@@ -9,5 +9,6 @@
     </head>
     <body>
         <div class="text-2xl">SKJ Corp Blogs</div>
+        {{ $slot }}
     </body>
 </html>
